@@ -80,6 +80,14 @@ while game:
                 player2_speed += 4
             if event.key == pygame.K_s:
                 player2_speed -= 4
+            if player1.top <=0:
+                player1.top =0
+            if player1.bottom >= height:
+                player1.bottom=height
+            if player2.top <=0:
+                player2.top =0
+            if player2.bottom >= height:
+                player2.bottom=height
     player1.y += player1_speed
     player2.y += player2_speed
     escolhido.update()
